@@ -14,7 +14,7 @@
     <form action="{% url 'cadastro' %}" method="post" style="justify-content: space-around;">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn-principal">Salvar</button>
+        <button type="submit" class="btn-principal">Adicionar</button>
     </form>
     {% if form.errors %}
         <p>Por favor, corrija os seguintes erros:</p>

@@ -59,6 +59,14 @@
     font-size: 15px;
 }
 
+p{
+
+    margin-left: 10px;
+    text-align: start;
+    box-sizing: border-box;
+    display: grid;
+}
+
 .linha-vertical{
     border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
 }

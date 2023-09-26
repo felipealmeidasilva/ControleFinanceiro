@@ -19,13 +19,14 @@
         <input class="text-card" type="date" id="search" name="search" placeholder="Buscar por data">
         <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
     </div>
-  
         {% for cadastro in cadastros %}
         <ul class="cadastro-list">
             <div style="justify-content: space-around;">
-                <span>{{cadastro.data}} |</span> 
-                <span>{{cadastro.responsavel}} |</span>
-                <span>{{cadastro.descricao}} |</span>
+                <span style="padding-right: 15px;">{{cadastro.data}}</span> 
+                <span style="padding-right: 15px;">{{cadastro.responsavel}}</span>
+                <span style="padding-right: 15px;">{{cadastro.descricao}}</span>
+                <span style="padding-right: 15px;">{{cadastro.tipo}}</span>
+                <span style="padding-right: 15px;">{{cadastro.valor}}</span>
                 <span><i class="fas fa-trash"></i></span>
                 <span><i class="fas fa-edit"></i></span>
             </div>

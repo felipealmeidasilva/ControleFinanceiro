@@ -16,8 +16,8 @@ def home(request):
         if form.is_valid():
             form.save()
             #return redirect('/')
-            return render(request, 'cadastro.html')
+            return render(request,'cadastro.html', {'form': form})
         else:
             print('forms inválido')
             form = CadastroNovo()
-        return render(request, 'cadastro.html', {'form': form})
+            return render(request,'cadastro.html', {'form': form})
